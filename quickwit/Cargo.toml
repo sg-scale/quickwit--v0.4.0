@@ -36,7 +36,7 @@ async-trait = "0.1"
 atty = "0.2"
 azure_core = "0.5.0"
 azure_storage = "0.6.0"
-azure_storage_blobs = "0.6.0"
+azure_storage_blobs = "0.17.0"
 backoff = { version = "0.4", features = ["tokio"] }
 base64 = "0.13"
 byte-unit = { version = "4", default-features = false, features = ["serde"] }
