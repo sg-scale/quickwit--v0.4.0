@@ -44,7 +44,7 @@ jobs:
           make archive BINARY_FILE=quickwit/target/release/quickwit \
             BINARY_VERSION=${{ env.ASSET_VERSION }} ARCHIVE_NAME=${{ env.ASSET_FULL_NAME }}
       - name: Save binary archive for few days
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ env.ASSET_FULL_NAME }}.tar.gz
           path: ./${{ env.ASSET_FULL_NAME }}.tar.gz
